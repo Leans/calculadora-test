@@ -6,8 +6,10 @@ import org.junit.Test;
 
 public class CalculadoraTest {
 	
+	Calculadora unaCalculadora = new Calculadora();
+	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws Exception {		
 	}
 
 	@After
@@ -17,7 +19,7 @@ public class CalculadoraTest {
 	@Test
 	public void sumaPositivos() {
 		System.out.println("Suma dos numeros positivos");
-		Calculadora unaCalculadora = new Calculadora();
+		
 		String resultadoEsperado = "5";
 		String resultadoObtenido = unaCalculadora.sumar(2, 3);
 		System.out.println(resultadoObtenido);
@@ -27,7 +29,6 @@ public class CalculadoraTest {
 	@Test
 	public void sumaNegativos() {
 		System.out.println("Suma dos numeros negativos");
-		Calculadora unaCalculadora = new Calculadora();
 		String resultadoEsperado = "-5";
 		String resultadoObtenido = unaCalculadora.sumar(-2, -3);
 		assertTrue(resultadoEsperado.equals(resultadoObtenido));
@@ -36,7 +37,6 @@ public class CalculadoraTest {
 	@Test
 	public void sumaPositivoNegativo() {
 		System.out.println("Suma un numero positivo y un numero negativo");
-		Calculadora unaCalculadora = new Calculadora();
 		String resultadoEsperado = "-1";
 		String resultadoObtenido = unaCalculadora.sumar(2, -3);
 		assertTrue(resultadoEsperado.equals(resultadoObtenido));		
