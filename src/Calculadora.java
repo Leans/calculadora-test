@@ -50,5 +50,9 @@ public class Calculadora {
 		}
 		return resultado;
 	}
+	public String restar(int p_x, int p_y) {
+		int resta = (p_x - p_y);
+		return String.valueOf(resta);
+	}
 	
 }
