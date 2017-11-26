@@ -39,5 +39,14 @@ public class RestarTest {
 		String resta = unaCalculadora.restar(x, y);
 		assertTrue(resta.equals("8"));
 	}
+	
+	@Test
+	public void restarNegativoPositivo() {
+		int x = -5;
+		int y = 3;
+		String resta = unaCalculadora.restar(x, y);
+		assertTrue(resta.equals("-8"));
+	}
+	
 
 }
