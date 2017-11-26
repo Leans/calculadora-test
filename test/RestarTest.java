@@ -1,8 +1,10 @@
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.testng.asserts.*;
 
 public class RestarTest {
 	
@@ -21,7 +23,8 @@ public class RestarTest {
 		int x = 5;
 		int y = 3;
 		String resta = unaCalculadora.restar(x, y);
-		assertTrue(resta.equals("2"));
+		//assertTrue(resta.equals("2"));
+		Assert.assertEquals("2", resta);
 	}
 	
 	@Test
@@ -29,7 +32,8 @@ public class RestarTest {
 		int x = -5;
 		int y = -3;
 		String resta = unaCalculadora.restar(x, y);
-		assertTrue(resta.equals("-2"));
+		//assertTrue(resta.equals("-2"));
+		Assert.assertEquals("-2", resta);
 	}
 	
 	@Test
@@ -37,7 +41,8 @@ public class RestarTest {
 		int x = 5;
 		int y = -3;
 		String resta = unaCalculadora.restar(x, y);
-		assertTrue(resta.equals("8"));
+		//assertTrue(resta.equals("8"));
+		Assert.assertEquals("8", resta);
 	}
 	
 	@Test
@@ -45,7 +50,8 @@ public class RestarTest {
 		int x = -5;
 		int y = 3;
 		String resta = unaCalculadora.restar(x, y);
-		assertTrue(resta.equals("-8"));
+		//assertTrue(resta.equals("-8"));
+		Assert.assertEquals("-8", resta);
 	}
 	
 	@Test
@@ -53,7 +59,8 @@ public class RestarTest {
 		int x = 5;
 		int y = 0;
 		String resta = unaCalculadora.restar(x, y);
-		assertTrue(resta.equals("5"));
+//		assertTrue(resta.equals("5"));
+		Assert.assertEquals("5", resta);
 	}
 
 }
