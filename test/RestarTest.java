@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class restarTest {
+public class RestarTest {
 	
 	Calculadora unaCalculadora = new Calculadora();
 
@@ -31,5 +31,7 @@ public class restarTest {
 		String resta = unaCalculadora.restar(x, y);
 		assertTrue(resta.equals("-2"));
 	}
+	
+	
 
 }

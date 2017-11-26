@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CalculadoraTest {
+public class SumaTest {
 	
 	Calculadora unaCalculadora = new Calculadora();
 	
