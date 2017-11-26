@@ -6,8 +6,7 @@ public class Calculadora {
 	/*
 	 * Constructor de Calculadora. No recive parametros de entrada.
 	 */
-	public Calculadora () {
-		
+	public Calculadora () {		
 	}
 	/*
 	 * Constructor de Calculadora. Recive dos parametros (int) de entrada: x e y.
