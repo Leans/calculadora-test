@@ -35,8 +35,7 @@ public class Calculadora {
 	/*
 	 * Metodo para sumar dos numeros enteros, Devuelve un string con el resultado de la suma.
 	 */
-	public String sumar(int p_x, int p_y) {
-		
+	public String sumar(int p_x, int p_y) {		
 		return String.valueOf(p_x + p_y);
 	}
 	
