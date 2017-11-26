@@ -32,6 +32,12 @@ public class RestarTest {
 		assertTrue(resta.equals("-2"));
 	}
 	
-	
+	@Test
+	public void restarPositivoNegativo() {
+		int x = 5;
+		int y = -3;
+		String resta = unaCalculadora.restar(x, y);
+		assertTrue(resta.equals("8"));
+	}
 
 }
