@@ -8,10 +8,11 @@ import org.testng.asserts.*;
 
 public class RestarTest {
 	
-	Calculadora unaCalculadora = new Calculadora();
+	Calculadora unaCalculadora;
 
 	@Before
 	public void setUp() throws Exception {
+		unaCalculadora = new Calculadora();
 	}
 
 	@After
